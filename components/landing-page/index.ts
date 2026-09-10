@@ -1,0 +1,7 @@
+export { default as LandingPageHeader } from './landing-page-header'
+export { default as HomeSection } from './home'
+export { default as NFTSection } from './nfts'
+export { default as FrequentlyAsked } from './frequently-asked'
+export { default as Footer } from './footer'
+export { default as ArtSection } from './art'
+export { default as RoadmapSection } from './roadmap'
