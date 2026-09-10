@@ -41,7 +41,7 @@ function Header() {
         </div>
 
         <Link
-          href="https://app.centher.io/auth/register?referred_by=0x571bc57d15e319b926b3b8fc67710c90a7591e63"
+          href="https://apex-dashboard-org.vercel.app/dashboard"
           target="_blank"
           className="hidden lg:flex"
         >
@@ -100,7 +100,7 @@ function Header() {
                 </a>
               ))}
               <Link
-                href="https://app.centher.io/auth/register?referred_by=0x571bc57d15e319b926b3b8fc67710c90a7591e63"
+                href="https://apex-dashboard-org.vercel.app/dashboard"
                 target="_blank"
                 className="pt-7"
               >
@@ -120,8 +120,7 @@ function Header() {
               </div>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <Link
-                  href="https://opensea.io/collection/apex-order-nft"
-                  target="_blank"
+                  href="#"
                   className="flex cursor-pointer items-center gap-2"
                 >
                   <Image
@@ -134,16 +133,14 @@ function Header() {
                   <p>Opensea</p>
                 </Link>
                 <Link
-                  href="https://t.me/+Q8uc3-WJNjc5NmJk"
-                  target="_blank"
+                  href="#"
                   className="flex cursor-pointer items-center gap-2"
                 >
                   <TelegramIcon className="h-7 w-7 text-color-gray-3" />
                   <p>Telegram</p>
                 </Link>
                 <Link
-                  href="https://app.centher.io/profile/0x571bc57d15e319b926b3b8fc67710c90a7591e63"
-                  target="_blank"
+                  href="#"
                   className="flex cursor-pointer items-center gap-2"
                 >
                   <Image

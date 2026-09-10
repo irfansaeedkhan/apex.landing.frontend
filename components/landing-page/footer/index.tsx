@@ -18,8 +18,7 @@ const Footer = () => {
 
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
-              href={'https://opensea.io/collection/apex-order-nft'}
-              target="_blank"
+              href="#"
               className="flex cursor-pointer items-center gap-2"
             >
               <Image
@@ -32,18 +31,14 @@ const Footer = () => {
               <p className="text-color-dark-blue">Opensea</p>
             </Link>
             <Link
-              href={'https://t.me/+Q8uc3-WJNjc5NmJk'}
-              target="_blank"
+              href="#"
               className="flex cursor-pointer items-center gap-2"
             >
               <TelegramIcon className="h-5 w-5 text-color-dark-blue sm:h-6 sm:w-6" />
               <p className="text-color-dark-blue">Telegram</p>
             </Link>
             <Link
-              href={
-                'https://app.centher.io/profile/0x571bc57d15e319b926b3b8fc67710c90a7591e63'
-              }
-              target="_blank"
+              href="#"
               className="flex cursor-pointer items-center gap-2"
             >
               <Image

@@ -35,7 +35,7 @@ const LandingPageHeader = () => {
         </a>
       </div>
       <Link
-        href="https://app.centher.io/auth/register?referred_by=0x571bc57d15e319b926b3b8fc67710c90a7591e63"
+        href="https://apex-dashboard-org.vercel.app/dashboard"
         target="_blank"
         className="hidden lg:flex"
       >
