@@ -9,7 +9,7 @@ const LandingPageHeader = () => {
     <div className="flex h-12 w-full items-center justify-between gap-5 bg-color-dark-purple px-4 sm:h-[72px] sm:px-8 md:px-10 lg:h-[88px]">
       <Image
         src="/images/logo.png"
-        alt="logo"
+        alt="Apex Order"
         width={40}
         height={44}
         className="h-[34px] w-8 flex-shrink-0 cursor-pointer sm:h-11 sm:w-10"

@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="mx-auto flex h-[calc(100%-64px)] w-full max-w-[302px] flex-col items-center justify-center gap-8 sm:max-w-[343px]">
           <Image
             src="/images/logo-black.png"
-            alt="logo"
+            alt="Apex Order"
             width={43}
             height={42}
             className="flex-shrink-0 cursor-pointer"
@@ -23,7 +23,7 @@ const Footer = () => {
             >
               <Image
                 src="/images/opensea-dark.svg"
-                alt="logo"
+                alt=""
                 width={24}
                 height={24}
                 className="h-5 w-5 sm:h-6 sm:w-6"
@@ -43,7 +43,7 @@ const Footer = () => {
             >
               <Image
                 src="/images/centher-dark.webp"
-                alt="Centher"
+                alt=""
                 width={24}
                 height={24}
                 className="h-6 w-6 sm:h-7 sm:w-7"

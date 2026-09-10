@@ -164,7 +164,7 @@ const CoreTeam = () => {
                       <div className="partner-box core">
                         <Image
                           src={member.image}
-                          alt={member.name}
+                          alt=""
                           width={370}
                           height={417}
                           sizes="(max-width: 768px) 80vw, 370px"

@@ -20,7 +20,7 @@ const SinglePhase: FC<Props> = ({
         src={
           phaseState >= phase ? '/images/logo.png' : '/images/phase-logo.png'
         }
-        alt="phase"
+        alt=""
         width={36}
         height={36}
         className="h-9 w-9 object-cover"

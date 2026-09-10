@@ -18,7 +18,7 @@ const ApexArt = () => {
           <div className="relative z-10 mx-auto flex w-full flex-col gap-4 sm:gap-8 md:max-w-[640px] lg:max-w-[928px] lg:gap-16">
             <Image
               src="/images/logo.png"
-              alt="apex-art"
+              alt=""
               width={74}
               height={74}
               className="mx-auto h-[36px] w-[36px] object-cover md:h-[74px] md:w-[74px]"

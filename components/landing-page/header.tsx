@@ -52,13 +52,12 @@ function Header() {
           id="mobile-nav-toggle"
           type="checkbox"
           className="peer sr-only"
-          aria-hidden="true"
+          aria-label="Toggle main menu"
         />
         <label
           htmlFor="mobile-nav-toggle"
           className="accent-themeDark inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg p-2 text-lg lg:hidden"
         >
-          <span className="sr-only">Toggle main menu</span>
           <svg
             className="mobile-nav-open-icon h-5 w-5"
             aria-hidden="true"

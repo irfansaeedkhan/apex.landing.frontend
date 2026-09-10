@@ -327,21 +327,21 @@ const Ecosystem = () => {
           <Planets className="planets absolute left-[50%] top-[0] w-full translate-x-[-50%] translate-y-[-50%] scale-150 sm:scale-100 lg:left-[0] lg:top-[50%] lg:h-[1000px] lg:w-[1000px] lg:translate-x-[-50%] lg:translate-y-[-50%] lg:scale-95" />
           <Image
             src="/images/logo.png"
-            alt="apex-art"
+            alt=""
             width={150}
             height={150}
             className="absolute left-[50%] top-[13%] mx-auto h-[76px] w-[76px] translate-x-[-50%] object-cover lg:left-[15%] lg:top-[50%] lg:h-[150px] lg:w-[150px] lg:translate-y-[-50%]"
           />
           <Image
             src="/images/planet-bg-blur.webp"
-            alt="apex-art"
+            alt=""
             width={261}
             height={1109}
             className="absolute left-[-25px] top-[-30vh] z-50 hidden h-[170vh] w-auto lg:block"
           />
           <Image
             src="/images/planet-bg-blur-mobile1.webp"
-            alt="apex-art"
+            alt=""
             width={401}
             height={609}
             className="absolute left-[50%] top-[0] z-50 block w-full translate-x-[-50%] translate-y-[-50%] lg:hidden"
