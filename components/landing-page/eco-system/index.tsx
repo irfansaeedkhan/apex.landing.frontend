@@ -9,7 +9,7 @@ const Ecosystem = () => {
   const activeTitleRef = useRef('Apex Art')
   const [title, setTitle] = useState('Apex Art')
   const [contentKey, setContentKey] = useState(0)
-  const [content, setContent] = useState(
+  const [content, setContent] = useState<React.ReactNode>(
     <div>
       <p>
         We believe that personal and professional education is the foundation of
@@ -274,7 +274,7 @@ const Ecosystem = () => {
 
   useEffect(() => {
     let cancelled = false
-    let animation3: { pause: () => void; play: () => void } | null = null
+    let animation3: gsap.core.Timeline | null = null
     const el = planetsRef.current
     const onEnter = () => animation3?.pause()
     const onLeave = () => animation3?.play()
