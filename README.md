@@ -1,6 +1,6 @@
 # Apex Order — Landing Frontend
 
-Marketing landing page for **Apex Order** ([apexorder.xyz](https://www.apexorder.xyz)): hero, ecosystem, NFTs, roadmap, art/team, FAQ, and footer.
+Marketing landing page for **Apex Order** ([apex-org.vercel.app](https://apex-org.vercel.app/)): hero, ecosystem, NFTs, roadmap, art/team, FAQ, and footer.
 
 ## Tech stack
 

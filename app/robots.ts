@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.apexorder.xyz/sitemap.xml',
-    host: 'https://www.apexorder.xyz',
+    sitemap: 'https://apex-org.vercel.app/sitemap.xml',
+    host: 'https://apex-org.vercel.app',
   }
 }

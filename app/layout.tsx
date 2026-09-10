@@ -8,7 +8,7 @@ const inter = Inter({
   preload: true,
 })
 
-const siteUrl = 'https://www.apexorder.xyz'
+const siteUrl = 'https://apex-org.vercel.app'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description:
       'We aim to attract the best, bringing the entire community to unlimited growth, reaching their own APEX.',
     url: siteUrl,
-    siteName: 'apexorder.xyz',
+    siteName: 'apex-org.vercel.app',
     images: [
       {
         url: '/images/logo.png',
