@@ -114,7 +114,9 @@ function Header() {
             <div className="flex flex-col gap-7 text-xs text-color-gray-3">
               <div className="flex flex-wrap items-center justify-center text-center">
                 <p className="inline-block font-normal lg:text-lg">
-                  &copy; 2023 Apex Order All rights reserved.
+                  {/* Round 1: was hardcoded 2023. */}
+                  &copy; {new Date().getFullYear()} Apex Order All rights
+                  reserved.
                 </p>
               </div>
               <div className="flex flex-wrap items-center justify-center gap-4">

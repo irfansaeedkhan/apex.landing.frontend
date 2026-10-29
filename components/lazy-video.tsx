@@ -8,14 +8,23 @@ type LazyVideoProps = {
   ariaLabel?: string
 }
 
-/** Loads and plays muted loop videos only when near the viewport. */
+/**
+ * Round 1: the old version set src only when the video entered the
+ * viewport and called play() in the same tick, so playback could fail
+ * before the file had loaded, and it attached an empty captions track
+ * (an 8-byte WEBVTT file with no cues). The video files themselves are
+ * valid h264, so the player was the suspect. src is now set
+ * immediately, the observer only pauses off-screen playback, the empty
+ * captions track is removed, and a failed video hides itself instead of
+ * showing a dead player.
+ */
 export default function LazyVideo({
   src,
   className,
   ariaLabel = 'Decorative video',
 }: LazyVideoProps) {
   const ref = useRef<HTMLVideoElement>(null)
-  const [activeSrc, setActiveSrc] = useState<string | undefined>(undefined)
+  const [failed, setFailed] = useState(false)
 
   useEffect(() => {
     const el = ref.current
@@ -26,7 +35,6 @@ export default function LazyVideo({
         const entry = entries[0]
         if (!entry) return
         if (entry.isIntersecting) {
-          setActiveSrc(src)
           void el.play().catch(() => {})
         } else {
           el.pause()
@@ -39,19 +47,21 @@ export default function LazyVideo({
     return () => observer.disconnect()
   }, [src])
 
+  if (failed) return null
+
   return (
     <video
       ref={ref}
       className={className}
-      src={activeSrc}
+      src={src}
       autoPlay
       loop
       muted
       playsInline
-      preload="none"
+      preload="metadata"
       aria-label={ariaLabel}
+      onError={() => setFailed(true)}
     >
-      <track kind="captions" src="/videos/silent-captions.vtt" srcLang="en" label="English" />
       Your browser does not support the video tag.
     </video>
   )

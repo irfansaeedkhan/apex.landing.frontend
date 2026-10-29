@@ -53,7 +53,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex h-16 w-full items-center justify-center rounded-b-3xl bg-color-light-gray text-color-dark-blue sm:rounded-b-[32px]">
-          2023 Apex Order All rights reserved.
+          {/* Round 1: was hardcoded 2023. */}
+          {new Date().getFullYear()} Apex Order All rights reserved.
         </div>
       </div>
     </div>
